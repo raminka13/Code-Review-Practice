@@ -1,0 +1,141 @@
+:root {
+    --color-light: oldlace;
+    --color-dark: #333;
+    --color-primary: rgb(148, 226, 148);
+    --color-primary-dark: rgb(53, 73, 53);
+}
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the value of 1rem */
+html {
+    /* 1rem = 10 pixels */
+    font-size: 62.5%;
+}
+ 
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.logo {
+    font-family: 'Inspiration', cursive;
+    font-size: 5rem;
+    color: var(--color-dark);
+    font-weight: 800;
+    margin-left: 7rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--color-primary);
+    color: var(--color-light);
+
+    position: fixed;
+    top: 0;
+    height: 7rem;
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul a {
+    margin-right: 4rem;
+    padding: 1rem 1rem 2rem;
+}
+
+.navbar ul a:hover {
+    border-bottom: 4px solid var(--color-dark);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+
+}
+
+.title {
+    font-size: 8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.content {
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tribute-info {
+    margin-bottom: 3rem;
+}
+
+.img-div {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-div img {
+    margin-bottom: 0.5rem;
+}
+
+.img-div span {
+    font-size: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--color-primary-dark);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
